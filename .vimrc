@@ -29,7 +29,6 @@ call vundle#begin('~/.vim/bundle/')
 Plugin 'VundleVim/Vundle.vim'      " management：let Vundle manage Vundle, required
 Plugin 'vimim/vimim'               " Chinese input method
 
-Plugin 'Molokai'                   " theme: Molokai is a Vim port of the monokai theme for TextMate
 
 call vundle#end()                  " required
 filetype plugin indent on          " required
