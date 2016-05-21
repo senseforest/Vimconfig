@@ -1,20 +1,22 @@
 "====================================
 " FileName: .vimrc
-" Author: shane
-" Version: 3.4.0
-" Email: dongshuai@sia.cn
-" Blog: http://blog.csdn.net/z_h_s
+" Author: Shane
+" Version: 3.0.0
+" Email: dongssea@hotmail.com
 " Date: 2016-5-20
 "====================================
 
 
 "##################################
-" pathogen && vundle插件管理
+" pathogen && vundle
 "##################################
+
 "----------------------------------- pathogen
+runtime bundle/vim-pathogen/autoload/pathogen.vim
 execute pathogen#infect()
 syntax on
 filetype plugin indent on
+"set sessionoptions-=options
 "----------------------------------- pathogen
 
 "----------------------------------- vundle
@@ -24,10 +26,10 @@ filetype off                       " required
 set rtp+=~/.vim/bundle/Vundle.vim  " set the runtime path to include Vundle and initialize
 call vundle#begin('~/.vim/bundle/')
 
-Plugin 'gmarik/Vundle.vim'         " 管理：let Vundle manage Vundle, required
-Plugin 'vimim/vimim'               " 编辑：Input Method -- Vim 中文输入法
+Plugin 'VundleVim/Vundle.vim'      " management：let Vundle manage Vundle, required
+Plugin 'vimim/vimim'               " Chinese input method
 
-Plugin 'Molokai'                   " 主题：Molokai is a Vim port of the monokai theme for TextMate
+Plugin 'Molokai'                   " theme: Molokai is a Vim port of the monokai theme for TextMate
 
 call vundle#end()                  " required
 filetype plugin indent on          " required
